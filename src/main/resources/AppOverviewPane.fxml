@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="389.0" prefWidth="520.0" styleClass="anchor" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.to2.speed.gui.Controller">
+    <children>
+        <ImageView fx:id="uncoveredCard1" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleLeftStackClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="500.0"/>
+        <ImageView fx:id="uncoveredCard2" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleRightStackClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="610.0"/>
+        <ImageView fx:id="commonDrawStack1" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleCommonDraw"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="390.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="commonDrawStack2" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleCommonDraw"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="720.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="handCard1" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleHandCardClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="389.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="handCard2" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleHandCardClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="500.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="handCard3" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleHandCardClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="610.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="handCard4" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleHandCardClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="720.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="handCard5" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#handleHandCardClick"
+                   pickOnBounds="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="830.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="drawStack" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true"
+                   AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="280.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="390.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="500.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="610.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="720.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="830.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" AnchorPane.bottomAnchor="500.0"
+                   AnchorPane.leftAnchor="280.0">
+            <image>
+                <Image url="@imgs/card_back.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="620.0"
+                   AnchorPane.leftAnchor="482.0">
+            <image>
+                <Image url="@imgs/start_button.png"/>
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="866.0" prefHeight="18.0" text="15" textAlignment="CENTER" textFill="BLACK"
+               wrapText="false" AnchorPane.bottomAnchor="475.0">
+            <font>
+                <Font name="System Bold" size="20.0" fx:id="x1"/>
+            </font>
+        </Label>
+        <Label fx:id="commonCardCount1" alignment="CENTER" font="$x1" layoutX="433.0" prefHeight="18.0" text="5"
+               textAlignment="CENTER" textFill="BLACK" wrapText="false" AnchorPane.bottomAnchor="275.0"/>
+        <Label fx:id="commonCardCount2" alignment="CENTER" font="$x1" layoutX="763.0" prefHeight="18.0" text="5"
+               textAlignment="CENTER" textFill="BLACK" wrapText="false" AnchorPane.bottomAnchor="275.0"/>
+        <Label alignment="CENTER" font="$x1" prefHeight="18.0" text="15" textAlignment="CENTER" textFill="BLACK"
+               wrapText="false" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="316.0"/>
+        <Label fx:id="timerLabel" textFill="#ff9533" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="580.0">
+            <font>
+                <Font size="72.0"/>
+            </font>
+        </Label>
+    </children>
+    <stylesheets>
+        <URL value="@Style.css"/>
+    </stylesheets>
+</AnchorPane>
